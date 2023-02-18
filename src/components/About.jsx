@@ -5,9 +5,11 @@ const About = () => {
     <div name='about' className='w-full my-32'>
         <div className='max-w-[1240px] mx-auto'>
             <div className='text-center'>
-                <h2 className='text-5xl font-bold'>Trusted by developers across the world</h2>
+                <h2 className='text-5xl font-bold'>About Us</h2>
                 <p className='text-3xl py-6 text-gray-600'>Welcome to our platform, where we believe in solving one of the most pressing issues that people face every day </p>
-                <p className='text-3xl py-6 text-black-900'>– finding a suitable parking spot for their vehicles</p>
+                <p className='text-3xl py-2 text-black-900'>– finding a suitable parking spot for their vehicles</p>
+                {/* <p className='text-3xl py-6 text-gray-600'>ParkShare is a unique solution to the parking problem that provides a platform for connecting parking space owners with those in need of parking.
+ </p> */}
             </div>
 
             {/* <div className='grid md:grid-cols-3 gap-1 px-2 text-center'>
