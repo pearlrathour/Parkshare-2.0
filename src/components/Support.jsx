@@ -3,7 +3,7 @@ import React from 'react';
 import { PhoneIcon, ArrowSmRightIcon } from '@heroicons/react/outline';
 import {ChipIcon, SupportIcon} from '@heroicons/react/solid'
 
-import supportImg from '../assets/support.jpg'
+import supportImg from '../assets/Parking.jpg'
 
 const Support = () => {
   return (
@@ -23,28 +23,30 @@ const Support = () => {
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
                       <PhoneIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
-                      <h3 className='font-bold text-2xl my-8'>How to list Parking Space</h3>
+                      <h3 className='font-bold text-2xl my-8'>How to list parking space ?</h3>
                       <p className='text-gray-600 text-xl'>List your available parking space and let others park their vehicles on it.</p>
                   </div>
                   <div className='bg-slate-100 pl-8 py-4'>
-                      <p className='flex items-center text-indigo-600'>Contact Us <ArrowSmRightIcon className='w-5 ml-2' /></p>
+                      <p className='flex items-center text-indigo-600'>Register <ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>
               </div>
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
                       <SupportIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
-                      <h3 className='font-bold text-2xl my-6'>Technical Support</h3>
-                      <p className='text-gray-600 text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident iure placeat blanditiis ea sint earum hic iste quibusdam exercitationem.</p>
+                      <h3 className='font-bold text-2xl my-6'>How to find a parking spot?</h3>
+                      <p className='text-gray-600 text-xl'>If you're looking for parking, browse through the available parking spots in the area and book one that suits your needs.
+</p>
                   </div>
                   <div className='bg-slate-100 pl-8 py-4'>
-                      <p className='flex items-center text-indigo-600'>Contact Us <ArrowSmRightIcon className='w-5 ml-2' /></p>
+                      <p className='flex items-center text-indigo-600'>Search <ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>
               </div>
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
                       <ChipIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
-                      <h3 className='font-bold text-2xl my-6'>Media Inquiries</h3>
-                      <p className='text-gray-600 text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident iure placeat blanditiis ea sint earum hic iste quibusdam exercitationem.</p>
+                      <h3 className='font-bold text-2xl my-6'>Security Handling</h3>
+                      <p className='text-gray-600 text-xl'>Information on how payments and transactions are handled, including the fees charged by ParkShare for facilitating the exchange and how the platform handles security and ensures a positive experience for both parking space owners and renters.
+</p>
                   </div>
                   <div className='bg-slate-100 pl-8 py-4'>
                       <p className='flex items-center text-indigo-600'>Contact Us <ArrowSmRightIcon className='w-5 ml-2' /></p>

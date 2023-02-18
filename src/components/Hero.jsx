@@ -16,7 +16,7 @@ const Hero = () => {
                 <p className='text-2xl'>Changing the unchanged</p>
                 <h1 className='py-3 text-5xl md:text-7xl font-bold'>PARKEASE</h1>
                 <p className='text-2xl'>Your Parking Spot, their Solution</p>
-                <button className='py-3 px-6 sm:w-[60%] my-4'>Search</button>
+                <button className='py-3 px-6 sm:w-[60%] my-4'>Explore</button>
             </div>
             <div>
                 <img className='w-full' src={bgImg} alt="/" />
