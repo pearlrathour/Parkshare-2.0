@@ -14,11 +14,11 @@ import bgImg from '../assets/Hero_Parking2.jpg'
 
 const Hero = () => {
   return (
-    <div name='home' className='w-full h-screen bg-zinc-200 flex flex-col justify-between'>
+    <div name='home' className='w-full h-screen bg-gray-100 flex flex-col justify-between'>
         <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
             <div className='flex flex-col justify-center md:items-start w-full px-2 py-8'>
                 <p className='text-2xl'>Changing the unchanged</p>
-                <h1 className='py-3 text-5xl md:text-7xl font-bold'>PARKEASE</h1>
+                <h1 className='py-3 text-5xl md:text-7xl font-bold'>ParkShare</h1>
                 <p className='text-2xl'>Your Parking Spot, their Solution</p>
                 <a href="https://parkshare11.onrender.com/home">
                     <button className='py-3 px-6 sm:w-[100%] my-4'>Explore</button>

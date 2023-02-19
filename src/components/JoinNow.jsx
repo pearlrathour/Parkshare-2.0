@@ -5,7 +5,7 @@ import { CheckIcon } from '@heroicons/react/solid';
 const Joinnow = () => {
   return (
     <div name='Joinnow' className='w-full text-white my-2'>
-      <div className='w-full h-[800px] bg-slate-900 absolute mix-blend-overlay'></div>
+      <div className='w-full h-[400px] bg-slate-900 absolute mix-blend-overlay'></div>
 
       <div className='max-w-[1240px] mx-auto py-12'>
 
