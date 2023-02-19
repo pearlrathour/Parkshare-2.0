@@ -1,17 +1,17 @@
 import React from 'react';
 import { CheckIcon } from '@heroicons/react/outline';
 
-const AllInOne = () => {
+const benefits = () => {
   return (
-    <div name='platforms' className='w-full my-32'>
-      <div className='max-w-[1240px] mx-auto px-2'>
+    <div name='benefits' className='w-full my-28'>
+      <div className='max-w-[1240px] mx-auto px-12'>
         <h2 className='text-5xl font-bold text-center'>All-In-One Platform</h2>
         <p className='text-2xl py-8 text-gray-500 text-center'>
         Renting out your unused driveway or parking space is a win-win situation. You get to earn extra income, while someone in need of parking gets a spot. Our platform is designed to be user-friendly and safe, with secure payments and a rating system to build trust between renters and renters.
 
         </p>
 
-        <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4'>
+        <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-4'>
 
           <div className='flex'>
             <div>
@@ -119,4 +119,4 @@ const AllInOne = () => {
   );
 };
 
-export default AllInOne;
+export default benefits;

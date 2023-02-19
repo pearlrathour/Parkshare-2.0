@@ -1,12 +1,16 @@
 import React from 'react'
 import {
     CloudUploadIcon,
+    CurrencyRupeeIcon,
     DatabaseIcon,
+    GlobeAltIcon,
+    GlobeIcon,
+    LightBulbIcon,
     PaperAirplaneIcon,
     ServerIcon,
 } from '@heroicons/react/solid'
 
-import bgImg from '../assets/Hero_Parking.jpg'
+import bgImg from '../assets/Hero_Parking2.jpg'
 
 const Hero = () => {
   return (
@@ -17,7 +21,7 @@ const Hero = () => {
                 <h1 className='py-3 text-5xl md:text-7xl font-bold'>PARKEASE</h1>
                 <p className='text-2xl'>Your Parking Spot, their Solution</p>
                 <a href="https://parkshare11.onrender.com/home">
-                    <button className='py-3 px-6 sm:w-[60%] my-4'>Explore</button>
+                    <button className='py-3 px-6 sm:w-[100%] my-4'>Explore</button>
                 </a>
             </div>
             <div>
@@ -28,10 +32,10 @@ const Hero = () => {
             border border-slate-300 rounded-xl text-center shadow-xl'>
                 <p>Service Benefits</p>
                 <div className='flex justify-between flex-wrap px-4'>
-                    <p className='flex px-4 py-2 text-slate-500'><CloudUploadIcon className='h-6 text-indigo-600' /> Economical</p>
-                    <p className='flex px-4 py-2 text-slate-500'><DatabaseIcon className='h-6 text-indigo-600' /> Eco Friendly</p>
-                    <p className='flex px-4 py-2 text-slate-500'><ServerIcon className='h-6 text-indigo-600' /> More Parking Space </p>
-                    <p className='flex px-4 py-2 text-slate-500'><PaperAirplaneIcon className='h-6 text-indigo-600' /> less Traffic</p>
+                    <p className='flex px-4 py-2 text-slate-500'><CurrencyRupeeIcon className='h-6 text-indigo-600' /> Economical</p>
+                    <p className='flex px-4 py-2 text-slate-500'><GlobeIcon className='h-6 text-indigo-600' /> Eco Friendly</p>
+                    <p className='flex px-4 py-2 text-slate-500'><PaperAirplaneIcon className='h-6 text-indigo-600' /> More Parking Space </p>
+                    <p className='flex px-4 py-2 text-slate-500'><LightBulbIcon className='h-6 text-indigo-600' /> less Traffic</p>
                 </div>
             </div>
         </div>

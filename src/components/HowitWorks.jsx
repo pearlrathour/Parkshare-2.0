@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { PhoneIcon, ArrowSmRightIcon } from '@heroicons/react/outline';
-import {ChipIcon, SupportIcon} from '@heroicons/react/solid'
+import { PhoneIcon, ArrowSmRightIcon, MapIcon, ShieldCheckIcon, ClipboardCopyIcon, SearchIcon } from '@heroicons/react/outline';
+import {ChipIcon, ClipboardCheckIcon, SupportIcon} from '@heroicons/react/solid'
 
 import supportImg from '../assets/Parking.jpg'
 
-const Support = () => {
+const HowitWorks = () => {
   return (
-  <div name='support' className='w-full mt-24'>
+  <div name='howitworks' className='w-full mt-24'>
       <div className='w-full h-[700px] bg-gray-900/90 absolute'>
         <img className='w-full h-full object-cover mix-blend-overlay' src={supportImg} alt="/" />
       </div>
@@ -22,7 +22,7 @@ const Support = () => {
           <div className='grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-black'>
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
-                      <PhoneIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
+                      <ClipboardCopyIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
                       <h3 className='font-bold text-2xl my-8'>How to list parking space ?</h3>
                       <p className='text-gray-600 text-xl'>List your unused parking space on ParShare platform, providing information on its location, availability, and pricing and let others park their vehicles on it.</p>
                   </div>
@@ -32,7 +32,7 @@ const Support = () => {
               </div>
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
-                      <SupportIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
+                      <SearchIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
                       <h3 className='font-bold text-2xl my-6'>How to find a parking spot?</h3>
                       <p className='text-gray-600 text-xl'>Browse through the available parking spots in the desired location, view pricing and availability and book the one that meets your needs online through the ParkShare platform.
 </p>
@@ -43,7 +43,7 @@ const Support = () => {
               </div>
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
-                      <ChipIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
+                      <ShieldCheckIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
                       <h3 className='font-bold text-2xl my-6'>Security Handling</h3>
                       <p className='text-gray-600 text-xl'>User-friendly and secure platform with a rating system for reliable parking experiences.
 </p>
@@ -58,4 +58,4 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default HowitWorks;
