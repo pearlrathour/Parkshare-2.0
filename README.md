@@ -8,8 +8,7 @@ https://parkshare.onrender.com && https://parkshare11.onrender.com/home
 
 #A brief about our project
 
-https://drive.google.com/file/d/1pkb8iFFe5LlVQWJk6t4b0Npoxan05DcE/view?usp=sharing
-
+https://docs.google.com/presentation/d/e/2PACX-1vRwtZhPJobbscDljJ-kXHg9evLc68SbUBRbu52HsJ8IYtS5Y3w_JgxlvRPh8Ic97g/pub?start=false&loop=false&delayms=3000&slide=id.p8
 
 
 
