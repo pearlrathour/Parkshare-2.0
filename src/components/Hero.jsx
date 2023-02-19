@@ -6,7 +6,7 @@ import {
     ServerIcon,
 } from '@heroicons/react/solid'
 
-import bgImg from '../assets/cyber-bg.png'
+import bgImg from '../assets/Hero_Parking.jpg'
 
 const Hero = () => {
   return (
