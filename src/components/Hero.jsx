@@ -19,8 +19,7 @@ const Hero = () => {
             <div className='flex flex-col justify-center md:items-start w-full px-2 py-8'>
                 <p className='text-2xl'>Changing the unchanged</p>
 
-                <h1 className='py-3 text-5xl md:text-7xl font-bold'>PARKSHARE</h1>
-
+                
                 <h1 className='py-3 text-5xl md:text-7xl font-bold'>ParkShare</h1>
 
                 <p className='text-2xl'>Your Parking Spot, their Solution</p>
