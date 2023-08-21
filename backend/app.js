@@ -1,13 +1,14 @@
-if (process.env.NODE_ENV !== "production") {
+if (process.env.Port !== "production") {
   require("dotenv").config();
 }
+// if in local req module
 
 const express = require("express");
-const path = require("path");
+const path = require("path"); // for working with file and directory paths
 const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
 const session = require("express-session");
-const flash = require("connect-flash");
+const flash = require("connect-flash"); // authentication
 const ExpressError = require("./utils/ExpressError");
 const methodOverride = require("method-override");
 const passport = require("passport");
