@@ -51,7 +51,7 @@ module.exports.renderEditForm = async (req, res) => {
   const campground = await Campground.findById(id);
   if (!campground) {
     req.flash("error", "Cannot find that Toilet!");
-    return res.redirect("/toilink");
+    return res.redirect("/parkshare");
   }
   res.render("campgrounds/edit", { campground });
 };
@@ -62,12 +62,12 @@ module.exports.updateCampground = async (req, res) => {
     ...req.body.campground,
   });
   req.flash("success", "Successfully updated Toilet!");
-  res.redirect(`/toilink/${campground._id}`);
+  res.redirect(`/parkshare/${campground._id}`);
 };
 
 module.exports.deleteCampground = async (req, res) => {
   const { id } = req.params;
   await Campground.findByIdAndDelete(id);
   req.flash("success", "Successfully deleted Toilet");
-  res.redirect("/toilink");
+  res.redirect("/parkshare");
 };

@@ -10,10 +10,9 @@ module.exports.register = async (req, res, next) => {
     const user = new User({ email, username });
     const registeredUser = await User.register(user, password);
     req.login(registeredUser, (err) => {
-      if (err) 
-        return next(err);
+      if (err) return next(err);
       req.flash("success", "Welcome to Toi-Link!");
-      res.redirect("/toilink");
+      res.redirect("/parkshare");
     });
   } catch (e) {
     req.flash("error", e.message);
@@ -27,13 +26,16 @@ module.exports.renderLogin = (req, res) => {
 
 module.exports.login = (req, res) => {
   req.flash("success", "welcome back!");
-  const redirectUrl = req.session.returnTo || "/toilink";
+  const redirectUrl = req.session.returnTo || "/parkshare";
   delete req.session.returnTo;
   res.redirect(redirectUrl);
 };
 
 module.exports.logout = (req, res) => {
-  req.logout();
-  req.flash("success", "Goodbye!");
-  res.redirect("/toilink");
+  req.logout(function(err) {
+    if (err) { return next(err); }
+    req.flash("success", "Goodbye!");
+  res.redirect("/parkshare");
+  });
+  
 };

@@ -1,4 +1,4 @@
-if (process.env.Port !== "production") {
+if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 // if in local req module
@@ -61,8 +61,8 @@ app.use((req, res, next) => {
 });
 
 app.use("/", userRoutes);
-app.use("/toilink", campgroundRoutes);
-app.use("/toilink/:id/reviews", reviewRoutes);
+app.use("/parkshare", campgroundRoutes);
+app.use("/parkshare/:id/reviews", reviewRoutes);
 
 app.get("/", (req, res) => {
   res.render("main");
@@ -81,19 +81,10 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("error", { err });
 });
 
-mongoose
-  .connect(
-    `mongodb+srv://App_Project:ue76RvCZ23XoXIOB@appcluster.jbd00.mongodb.net/parkShare?retryWrites=true&w=majority`,
-    { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }
-  )
-  .then((result) => {
-    console.log("Database Connected!!");
-    app.listen(port, () => {
-      console.log("lets goo");
-    });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
-  
+mongoose.connect(`mongodb+srv://pearlrathour:pR%4007142002@cluster0.wzyeuro.mongodb.net/Parkshare?retryWrites=true&w=majority`, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true
+}).then(()=>{
+  console.log("Conn succ");
+}).catch((err)=> console.log("No conn", err));

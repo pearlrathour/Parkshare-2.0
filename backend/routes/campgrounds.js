@@ -8,8 +8,10 @@ const Campground = require("../models/campground");
 
 const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 
-router.route("/")
+router
+  .route("/")
   .get(catchAsync(campgrounds.index))
+
   .post(
     isLoggedIn,
     validateCampground,
@@ -33,7 +35,8 @@ router
   )
   .delete(isLoggedIn, isAuthor, catchAsync(campgrounds.deleteCampground));
 
-router.get("/:id/edit",
+router.get(
+  "/:id/edit",
   isLoggedIn,
   isAuthor,
   catchAsync(campgrounds.renderEditForm)

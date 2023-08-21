@@ -107,7 +107,7 @@ map.on("load", () => {
 
     new mapboxgl.Popup()
       .setLngLat(coordinates)
-      .setHTML(`<h3>Toilet</h3>`)
+      .setHTML(`<h3>Parking</h3>`)
       .addTo(map);
   });
 
