@@ -47,6 +47,8 @@ module.exports.showCampground = async (req, res) => {
 //popuate add extra col
 
 module.exports.renderEditForm = async (req, res) => {
+  console.log("Edit");
+  console.log(req.params);
   const { id } = req.params;
   const campground = await Campground.findById(id);
   if (!campground) {

@@ -4,15 +4,19 @@ import { CheckIcon } from '@heroicons/react/solid';
 
 const Joinnow = () => {
   return (
-    <div name='Joinnow' className='w-full text-white my-2'>
-      <div className='w-full h-[400px] bg-slate-900 absolute mix-blend-overlay'></div>
+    <div name='Joinnow' className='w-full text-white'>
+      <div className='w-full h-[60%] bg-black absolute mix-blend-overlay'></div>
+
+      <div className='h-[1px] w-full bg-sky-300'>
+
+        </div>
 
       <div className='max-w-[1240px] mx-auto py-12'>
 
-        <div className='text-center py-8 text-slate-300'>
+        <div className='text-center py-8 px-20 text-gray-300'>
           {/* <h2 className='text-3xl uppercase'>Join Now</h2> */}
           <h3 className='text-5xl font-bold text-white py-2'>Join Now</h3>
-          <p className='text-3xl'>
+          <p className='text-2xl text-center mt-10'>
           Join our platform today and become part of a community that promotes efficient, affordable, and eco-friendly parking solutions. By sharing your unused parking space, you can earn extra income while also contributing to a more sustainable future. Start listing your parking space now and let's solve the parking problem together.
           </p>
         </div>
