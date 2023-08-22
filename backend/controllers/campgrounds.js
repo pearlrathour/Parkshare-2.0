@@ -25,8 +25,8 @@ module.exports.createCampground = async (req, res, next) => {
   campground.geometry = geoData.body.features[0].geometry;
   campground.author = req.user._id;
   await campground.save();
-  req.flash("success", "Successfully made a new Toilet!");
-  res.redirect(`/toilink/${campground._id}`);
+  req.flash("success", "Successfully made a new Parking!");
+  res.redirect(`/parkshare/${campground._id}`);
 };
 
 module.exports.showCampground = async (req, res) => {
@@ -39,8 +39,8 @@ module.exports.showCampground = async (req, res) => {
     })
     .populate("author");
   if (!campground) {
-    req.flash("error", "Cannot find that Toilet!");
-    return res.redirect("/toilink");
+    req.flash("error", "Cannot find that Parking!");
+    return res.redirect("/parkshare");
   }
   res.render("campgrounds/show", { campground });
 };
@@ -50,7 +50,7 @@ module.exports.renderEditForm = async (req, res) => {
   const { id } = req.params;
   const campground = await Campground.findById(id);
   if (!campground) {
-    req.flash("error", "Cannot find that Toilet!");
+    req.flash("error", "Cannot find that Parking!");
     return res.redirect("/parkshare");
   }
   res.render("campgrounds/edit", { campground });
@@ -61,13 +61,13 @@ module.exports.updateCampground = async (req, res) => {
   const campground = await Campground.findByIdAndUpdate(id, {
     ...req.body.campground,
   });
-  req.flash("success", "Successfully updated Toilet!");
+  req.flash("success", "Successfully updated Parking!");
   res.redirect(`/parkshare/${campground._id}`);
 };
 
 module.exports.deleteCampground = async (req, res) => {
   const { id } = req.params;
   await Campground.findByIdAndDelete(id);
-  req.flash("success", "Successfully deleted Toilet");
+  req.flash("success", "Successfully deleted Parking");
   res.redirect("/parkshare");
 };

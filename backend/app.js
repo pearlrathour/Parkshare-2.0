@@ -81,10 +81,14 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("error", { err });
 });
 
-mongoose.connect(`mongodb+srv://pearlrathour:pR%4007142002@cluster0.wzyeuro.mongodb.net/Parkshare?retryWrites=true&w=majority`, {
+mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
 }).then(()=>{
   console.log("Conn succ");
 }).catch((err)=> console.log("No conn", err));
+
+app.listen(process.env.Port, function () {
+  console.log("Server started on port 4000");
+}); 
